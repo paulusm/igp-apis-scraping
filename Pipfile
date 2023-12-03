@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 pyquery = "*"
 pandas = "*"
+requests = "*"
+sdv = "*"
 
 [dev-packages]
 
