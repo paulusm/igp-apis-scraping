@@ -8,6 +8,7 @@ pyquery = "*"
 pandas = "*"
 requests = "*"
 sdv = "*"
+sng = "*"
 
 [dev-packages]
 

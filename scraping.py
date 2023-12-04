@@ -16,11 +16,12 @@ for startupCard in startupCards:
     outputCard["title"] = parsedCard(".profile-info-left strong").text()
     outputCard["description"] = parsedCard(".left p").text()
     outputCard["funding"] = parsedCard(".right ul li:nth-child(1) p").text()
+    outputCard["industry"] = parsedCard(".right ul li:nth-child(2) p").text().split(",")[0]
     outputCards.append(outputCard)
 
 # Convert to Data Frame
 df = pd.DataFrame(outputCards)
 
 # Create CSV
-df.to_csv("data/startups.csv")
+df.to_csv("data/startups.csv",index_label="ID")
 print(df)
