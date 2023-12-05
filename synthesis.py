@@ -19,6 +19,7 @@ dfStartUpsReal = pd.read_csv("data/startups.csv")
 metadata.detect_from_dataframe(data=dfStartUpsReal)
 # Tweak metadata
 metadata.update_column(column_name="industry",sdtype='categorical')
+metadata.update_column(column_name="fundingtype",sdtype='categorical')
 pprint.pprint(metadata.to_dict())
 print()
 
@@ -31,4 +32,3 @@ synthetic_data = synthesizer.sample(num_rows=10)
 print(synthetic_data.head(10) )
 
 # TODO Synthetic Data Validation!!
-
