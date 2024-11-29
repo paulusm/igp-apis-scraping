@@ -8,7 +8,7 @@ pyquery = "*"
 pandas = "*"
 requests = "*"
 sdv = "*"
-sng = "*"
+ollama = "*"
 
 [dev-packages]
 
