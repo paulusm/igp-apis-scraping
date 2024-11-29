@@ -2,7 +2,14 @@
 
 ## Demonstrators on : APIs, Web Scraping, Data Synthesis
 
-Paul Matthews 2023-12-04
+Paul Matthews 2023-12-04, updated 2024-11-29
+
+*See Pipfile for libraries used. These can be installed with [Pipenv](https://pipenv.pypa.io/en/latest/)*
+
+```shell
+# Remove Pipfile.lock if this does not work with your python version
+pipenv install
+```
 
 1. Web REST API : UK Companies House API Service [companiess-house.py](companiess-house.py) - Search for companies by location and name. Requires an API key to be stored in a file named ch-api-key.secret. API keys require a [registration to the service](https://developer.company-information.service.gov.uk/overview/).
 

@@ -21,3 +21,5 @@ print(f'Return Code - {response.status_code}\n\n')
 # Pretty print the returned JSON data
 json_obj = json.loads(response.text)
 print(json.dumps(json_obj, indent=3))
+
+# Challenge - Load into a Pandas DataFrame
